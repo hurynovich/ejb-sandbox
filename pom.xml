@@ -17,8 +17,6 @@
 
     <modules>
         <module>foo</module>
+        <module>standalone-app</module>
     </modules>
-
-
-
 </project>

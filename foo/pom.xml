@@ -16,6 +16,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
 
     <modules>
@@ -34,6 +36,14 @@
                 <groupId>io.github.hurynovich.helloejb.foo</groupId>
                 <artifactId>simple-ejb</artifactId>
                 <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- JavaEE api -->
+            <dependency>
+                <groupId>javax.ejb</groupId>
+                <artifactId>javax.ejb-api</artifactId>
+                <version>3.2</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

@@ -16,6 +16,13 @@
   <name>Simple EJB</name>
   <description>In this module I create some very simple EJBs.</description>
 
+  <dependencies>
+    <dependency>
+      <groupId>javax.ejb</groupId>
+      <artifactId>javax.ejb-api</artifactId>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <plugin>
