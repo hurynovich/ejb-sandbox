@@ -7,7 +7,9 @@
     <groupId>io.github.hurynovich.helloejb</groupId>
     <artifactId>hello-ejb</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <packaging>pom</packaging>
+
     <name>Hello EJB</name>
     <description>
         This is root project which gathers together all my
@@ -18,5 +20,26 @@
     <modules>
         <module>foo</module>
         <module>standalone-app</module>
+        <module>logging</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Local projects -->
+            <dependency>
+                <groupId>io.github.hurynovich.helloejb</groupId>
+                <artifactId>logging</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <!-- External dependencies -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.8</version>
+                <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 </project>
