@@ -4,15 +4,15 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.github.hurynovich.helloejb.foo</groupId>
-    <artifactId>foo</artifactId>
+    <groupId>io.github.hurynovich.ejb.server1</groupId>
+    <artifactId>server-app1-ear</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>ear</artifactId>
   <packaging>ear</packaging>
 
-  <name>Foo EAR</name>
+  <name>Server app EAR</name>
   <description>This module builds EAR for FOO project.</description>
 
   <dependencies>

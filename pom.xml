@@ -4,21 +4,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.hurynovich.helloejb</groupId>
-    <artifactId>hello-ejb</artifactId>
+    <groupId>io.github.hurynovich.ejb</groupId>
+    <artifactId>ejb-experiments</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
-    <name>Hello EJB</name>
+    <name>EJB Experiments</name>
     <description>
         This is root project which gathers together all my
         subprojects to where I make experiments with EJB.
         It is mainly used to buils all projects together.
     </description>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
     <modules>
-        <module>foo</module>
+        <module>server-app1</module>
         <module>standalone-app</module>
         <module>logging</module>
     </modules>
@@ -41,5 +47,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
