@@ -8,7 +8,9 @@
         </layout>
     </appender>
 
-    <root level="INFO">
+    <logger name="io.github.hurynovich" level="INFO" />
+
+    <root level="WARN">
         <appender-ref ref="STDOUT" />
     </root>
 </configuration>
