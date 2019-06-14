@@ -10,5 +10,5 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>alpha-ejb-api</artifactId>
-    <packaging>ejb-client</packaging>
+    <packaging>jar</packaging>
 </project>

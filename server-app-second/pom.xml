@@ -13,8 +13,6 @@
     <artifactId>server-app-second</artifactId>
     <packaging>pom</packaging>
 
-    <name>Server app second</name>
-
     <modules>
         <module>second-ear</module>
         <module>gamma-ejb-api</module>
@@ -23,23 +21,10 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>io.github.hurynovich.helloejb.foo</groupId>
-                <artifactId>ear</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.hurynovich.helloejb.foo</groupId>
-                <artifactId>simple-ejb</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-
             <!-- JavaEE api -->
             <dependency>
                 <groupId>javax.ejb</groupId>
                 <artifactId>javax.ejb-api</artifactId>
-                <version>3.2</version>
-                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

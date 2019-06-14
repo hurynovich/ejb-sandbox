@@ -22,7 +22,7 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.github.hurynovich.helloejb</groupId>
+            <groupId>io.github.hurynovich.ejb</groupId>
             <artifactId>logging</artifactId>
         </dependency>
         <dependency>

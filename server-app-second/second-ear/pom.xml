@@ -12,28 +12,15 @@
   <artifactId>second-ear</artifactId>
   <packaging>ear</packaging>
 
-  <name>Second EAR</name>
-  <description>This module builds EAR for FOO project.</description>
-
   <dependencies>
     <dependency>
-      <groupId>io.github.hurynovich.helloejb.foo</groupId>
-      <artifactId>simple-ejb</artifactId>
+      <groupId>io.github.hurynovich.ejb.second</groupId>
+      <artifactId>gamma-ejb-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.github.hurynovich.ejb.second</groupId>
+      <artifactId>gamma-ejb-impl</artifactId>
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-ear-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>

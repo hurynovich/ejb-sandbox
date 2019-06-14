@@ -12,7 +12,6 @@
   <artifactId>first-ear</artifactId>
   <packaging>ear</packaging>
 
-  <name>Server app EAR</name>
   <description>
     This is first EAR.
     It is created to experiment with EJB's in different EARs deployed in the same server.
@@ -25,18 +24,4 @@
     </dependency>
   </dependencies>
 
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-ear-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-            </manifest>
-          </archive>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>

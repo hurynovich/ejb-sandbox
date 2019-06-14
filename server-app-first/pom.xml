@@ -13,7 +13,6 @@
     <artifactId>server-app-first</artifactId>
     <packaging>pom</packaging>
 
-    <name>Server app1</name>
     <description>
         FOO is first sample application.
         Here I create EJBs to experiment on them.
@@ -21,7 +20,6 @@
 
     <modules>
         <module>first-ear</module>
-        <module>alpha-ejb-api</module>
         <module>alpha-ejb-api</module>
         <module>alpha-ejb-impl</module>
         <module>beta-ejb-impl</module>

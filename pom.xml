@@ -10,7 +10,6 @@
 
     <packaging>pom</packaging>
 
-    <name>EJB Experiments</name>
     <description>
         This is root project which gathers together all my
         subprojects to where I make experiments with EJB.
@@ -24,8 +23,9 @@
     </properties>
 
     <modules>
-        <module>server-app1</module>
-        <module>standalone-app</module>
+        <module>server-app-first</module>
+        <module>server-app-second</module>
+        <module>client-app</module>
         <module>logging</module>
     </modules>
 
@@ -33,9 +33,19 @@
         <dependencies>
             <!-- Local projects -->
             <dependency>
-                <groupId>io.github.hurynovich.helloejb</groupId>
+                <groupId>io.github.hurynovich.ejb</groupId>
                 <artifactId>logging</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.hurynovich.ejb.second</groupId>
+                <artifactId>gamma-ejb-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.hurynovich.ejb.second</groupId>
+                <artifactId>gamma-ejb-impl</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- External dependencies -->
@@ -45,6 +55,19 @@
                 <version>1.18.8</version>
                 <scope>provided</scope>
             </dependency>
+            <dependency>
+                <groupId>org.wildfly</groupId>
+                <artifactId>wildfly-ejb-client-bom</artifactId>
+                <version>16.0.0.Final</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>javax.ejb</groupId>
+                <artifactId>javax.ejb-api</artifactId>
+                <version>3.2</version>
+                <scope>provided</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
 </project>

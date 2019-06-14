@@ -12,4 +12,10 @@
     <artifactId>beta-ejb-impl</artifactId>
     <packaging>ejb</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>io.github.hurynovich.ejb</groupId>
+            <artifactId>logging</artifactId>
+        </dependency>
+    </dependencies>
 </project>
