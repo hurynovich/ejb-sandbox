@@ -9,6 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    <groupId>io.github.hurynovich.ejb.first</groupId>
     <artifactId>server-app-first</artifactId>
     <packaging>pom</packaging>
 
@@ -19,8 +20,12 @@
     </description>
 
     <modules>
-        <module>ear</module>
-        <module>simple-ejb</module>
+        <module>first-ear</module>
+        <module>alpha-ejb-api</module>
+        <module>alpha-ejb-api</module>
+        <module>alpha-ejb-impl</module>
+        <module>beta-ejb-impl</module>
+        <module>omega-web</module>
     </modules>
 
     <dependencyManagement>

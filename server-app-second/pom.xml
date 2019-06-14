@@ -9,18 +9,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>server-app2</artifactId>
+    <groupId>io.github.hurynovich.ejb.second</groupId>
+    <artifactId>server-app-second</artifactId>
     <packaging>pom</packaging>
 
-    <name>Server app2</name>
-    <description>
-        FOO is first sample application.
-        Here I create EJBs to experiment on them.
-    </description>
+    <name>Server app second</name>
 
     <modules>
-        <module>ear</module>
-        <module>simple-ejb</module>
+        <module>second-ear</module>
+        <module>gamma-ejb-api</module>
+        <module>gamma-ejb-impl</module>
     </modules>
 
     <dependencyManagement>
