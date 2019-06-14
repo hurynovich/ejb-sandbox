@@ -1,6 +1,6 @@
 package io.github.hurynovich.ejb.client;
 
-import io.github.hurynovich.helloejb.foo.simple.GreetingsBean;
+import io.github.hurynovich.ejb.first.alpha.HelloWorldBean;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.naming.*;
@@ -29,17 +29,8 @@ public class Main {
         Context o = (Context) context.lookup("/simple-ejb-1.0-SNAPSHOT");
         printContextContent(o);
 
-        GreetingsBean bean = (GreetingsBean) o.lookup("GreetingsEJB!io.github.hurynovich.helloejb.foo.simple.GreetingsBean");
-        GreetingsBean bean2 = (GreetingsBean) o.lookup("GreetingsEJB!io.github.hurynovich.helloejb.foo.simple.GreetingsBean");
-        log.info(bean.sayHello("Pavel"));
-        for(int i = 0; i < 1000; i++) {
-            final int idx = i;
-            new Thread(()->{
-                log.info(idx + "->" + bean.getId());
-                log.info(idx + "->" + bean.slleep(1000));
-            }).start();
-        }
-        log.info("{}", bean.equals(bean2));
+        HelloWorldBean bean = (HelloWorldBean) o.lookup("GreetingsEJB!io.github.hurynovich.helloejb.foo.simple.GreetingsBean");
+        log.info("{}", bean.sayHello());
     }
 
     private static void printContextContent(Context context) throws NamingException {

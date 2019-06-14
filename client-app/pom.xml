@@ -28,13 +28,11 @@
         <dependency>
             <groupId>org.wildfly</groupId>
             <artifactId>wildfly-ejb-client-bom</artifactId>
-            <version>16.0.0.Final</version>
             <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>io.github.hurynovich.helloejb.foo</groupId>
-            <artifactId>simple-ejb</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>io.github.hurynovich.ejb.first</groupId>
+            <artifactId>alpha-ejb-api</artifactId>
         </dependency>
     </dependencies>
 </project>

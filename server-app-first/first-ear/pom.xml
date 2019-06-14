@@ -19,8 +19,14 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.github.hurynovich.helloejb.foo</groupId>
-      <artifactId>simple-ejb</artifactId>
+      <groupId>io.github.hurynovich.ejb.first</groupId>
+      <artifactId>alpha-ejb-impl</artifactId>
+      <type>ejb</type>
+    </dependency>
+    <dependency>
+      <groupId>io.github.hurynovich.ejb.first</groupId>
+      <artifactId>beta-ejb-impl</artifactId>
+      <type>ejb</type>
     </dependency>
   </dependencies>
 

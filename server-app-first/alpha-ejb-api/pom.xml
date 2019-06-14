@@ -11,4 +11,11 @@
 
     <artifactId>alpha-ejb-api</artifactId>
     <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.ejb</groupId>
+            <artifactId>javax.ejb-api</artifactId>
+        </dependency>
+    </dependencies>
 </project>

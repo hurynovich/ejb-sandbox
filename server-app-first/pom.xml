@@ -23,7 +23,6 @@
         <module>alpha-ejb-api</module>
         <module>alpha-ejb-impl</module>
         <module>beta-ejb-impl</module>
-        <module>omega-web</module>
     </modules>
 
     <dependencyManagement>

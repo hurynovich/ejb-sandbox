@@ -38,6 +38,23 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.github.hurynovich.ejb.first</groupId>
+                <artifactId>alpha-ejb-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.hurynovich.ejb.first</groupId>
+                <artifactId>alpha-ejb-impl</artifactId>
+                <version>${project.version}</version>
+                <type>ejb</type>
+            </dependency>
+            <dependency>
+                <groupId>io.github.hurynovich.ejb.first</groupId>
+                <artifactId>beta-ejb-impl</artifactId>
+                <version>${project.version}</version>
+                <type>ejb</type>
+            </dependency>
+            <dependency>
                 <groupId>io.github.hurynovich.ejb.second</groupId>
                 <artifactId>gamma-ejb-api</artifactId>
                 <version>${project.version}</version>
@@ -46,6 +63,7 @@
                 <groupId>io.github.hurynovich.ejb.second</groupId>
                 <artifactId>gamma-ejb-impl</artifactId>
                 <version>${project.version}</version>
+                <type>ejb</type>
             </dependency>
 
             <!-- External dependencies -->
@@ -70,4 +88,20 @@
         </dependencies>
     </dependencyManagement>
 
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>3.0.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.2.3</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
