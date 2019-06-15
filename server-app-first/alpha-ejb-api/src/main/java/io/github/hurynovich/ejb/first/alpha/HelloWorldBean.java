@@ -5,8 +5,9 @@ import javax.ejb.Remote;
 
 /**
  * This is very simple "Hello world" EJB interface.
+ * It just returns greeting message.
  */
-@Local @Remote
+@Remote
 public interface HelloWorldBean {
     String sayHello();
 }
