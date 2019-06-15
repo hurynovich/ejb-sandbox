@@ -34,5 +34,17 @@
             <groupId>io.github.hurynovich.ejb.first</groupId>
             <artifactId>alpha-ejb-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.stefanbirkner</groupId>
+            <artifactId>system-rules</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fish.payara.extras</groupId>
+            <artifactId>ejb-http-client</artifactId>
+        </dependency>
     </dependencies>
 </project>

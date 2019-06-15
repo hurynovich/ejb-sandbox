@@ -19,13 +19,14 @@
         <module>gamma-ejb-impl</module>
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- JavaEE api -->
-            <dependency>
-                <groupId>javax.ejb</groupId>
-                <artifactId>javax.ejb-api</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-ear-plugin</artifactId>
+                <configuration>
+                    <earName>server-app-second</earName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

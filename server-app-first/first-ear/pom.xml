@@ -28,6 +28,33 @@
       <artifactId>beta-ejb-impl</artifactId>
       <type>ejb</type>
     </dependency>
+    <dependency>
+      <groupId>io.github.hurynovich.ejb.first</groupId>
+      <artifactId>alpha-ejb-api</artifactId>
+    </dependency>
   </dependencies>
 
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-ear-plugin</artifactId>
+        <configuration>
+          <modules>
+            <ejbModule>
+              <groupId>io.github.hurynovich.ejb.first</groupId>
+              <artifactId>alpha-ejb-impl</artifactId>
+              <bundleFileName>alpha-ejb.jar</bundleFileName>
+            </ejbModule>
+            <ejbModule>
+              <groupId>io.github.hurynovich.ejb.first</groupId>
+              <artifactId>beta-ejb-impl</artifactId>
+              <bundleFileName>beta-ejb.jar</bundleFileName>
+            </ejbModule>
+          </modules>
+          <earName>server-app-first</earName>
+
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
